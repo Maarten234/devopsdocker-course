@@ -1,2 +1,0 @@
-# devopsdocker-course
-devopsdocker course
