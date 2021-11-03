@@ -4,9 +4,11 @@ services:
     ports:
      - "5000:5000"
     build: ./front-end/.
+    links:
+     - backend
   backend:
     ports:
-     - "49154:8080"
+     - "8080"
     build: ./back-end/.
     environment:
      - "REDIS_HOST=redis"
