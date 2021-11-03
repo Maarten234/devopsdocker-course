@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 WORKDIR /usr/src/app
 EXPOSE 5000
-ENV REACT_APP_BACKEND_URL=http://localhost:49154
+ENV REACT_APP_BACKEND_URL=http://localhost:8080
 COPY ./example-frontend/ .
 RUN apt-get update && apt-get install curl -y
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash 
